@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #F5E0B7;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 38px;
+    font-family: 'Saira', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 22px;
+    font-family: 'Saira', Arial, sans-serif;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.c3 {
+    max-height: 100%;
+    animation: move 1s linear infinite alternate;
+}
+.c2 {
+    max-height: 80%;
+    animation: move 1s linear infinite alternate-reverse;
+}
+.c1 {
+    max-height: 60%;
+    opacity: .8;
+    animation: move 1.5s linear infinite alternate;
+}
+.cityscape_container {
+    position: relative;
+    min-height: 140px;
+}
+
+.cityscape {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes move {
+    from { margin-left:0px; }
+    to   { margin-left:20px; }
+}
+
+.fixed_image {
+    margin-bottom: 80px;
+}
+
+.cityscape_copy {
+    margin-top: 80px;
+}
+.cityscape_copy p {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Saira', Arial, sans-serif;
+}
