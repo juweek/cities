@@ -51,27 +51,23 @@ function setStep() {
 }
 
 function highlightStates(currentStep) {
-    console.log(currentStep);
-    /*
-    if ((currentStep != null) && (currentStep != window.currentStep)) {
-        window.currentStep = currentStep;
-        for (var step in steps) {
-            $('.uit-chart').removeClass('is-' + steps[step])
-        }
-        $('.uit-chart').addClass('is-' + currentStep);
-        window.currentStep = currentStep;
-        switch (currentStep) {
-            case 'forestry':
-            break
+    switch (currentStep) {
+        case 1:
+        $('.c4').addClass('c3');
+        $('.c3').removeClass('c4');
+        break
 
-            case 'limited_water':
-            break
+        case 2:
+        $('.c3').addClass('c4');
+        $('.c4').removeClass('c3');
+        console.log('yuh');
+        break
 
-            case 'dead_trees':
-            break
-        }
+        case 3:
+        $('.c4').addClass('c3');
+        $('.c3').removeClass('c4');
+        break
     }
-    */
 }
 
 function percentageOfHeight(percentage) {

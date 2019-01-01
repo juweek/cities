@@ -23,6 +23,11 @@ h4 {
     text-align: center;
 }
 
+.c4 {
+    max-height: 100%;
+    animation: move .2s linear infinite alternate;
+}
+
 .c3 {
     max-height: 100%;
     animation: move 1s linear infinite alternate;
